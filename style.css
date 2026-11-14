@@ -1,0 +1,305 @@
+* General Resets */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: 'Poppins', sans-serif;
+background-color: #ffcfee;
+color: #8b008b;
+line-height: 1.6;
+scroll-behavior: smooth;
+}
+
+/* Header Styling */
+header {
+background: linear-gradient(135deg, #ff1493, #c71585, #ff1493);
+color: #ffffff;
+padding: 1.5rem 1rem;
+text-align: center;
+position: sticky; /*for fixing the box*/
+top: 0;
+z-index: 1000;
+border-radius: 20px;
+box-shadow: 0 4.5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.header-container h1 {
+font-size: 2.5rem;
+font-weight: 700;
+letter-spacing: 1px;
+}
+
+.header-container .subtitle {
+font-size: 1.5rem;
+}
+
+nav ul {
+list-style: none;
+display: flex;
+justify-content: center;
+gap: 10px;
+margin-top: 10px;
+flex-wrap: wrap;
+}
+
+nav a {
+color: #ffffff;
+text-decoration: none;
+font-weight: 600;
+padding: 8px 16px;
+border-radius: 20px;
+transition: all 0.5s ease;
+}
+
+nav a:hover {
+background-color: #fff;
+color: #ff00ff;
+}
+
+/* Main Container */
+.main-container {
+max-width: 900px auto;
+margin: 20px auto;
+padding: 0 20px;
+}
+
+/* Card Styling */
+.card {
+background: #ffffff;
+padding: 20px;
+border-radius: 12px;
+margin-bottom: 20px;
+box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+transform: translateY(-3px);
+box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+color: #c71585;
+margin-bottom: 15px;
+font-size: 1.5rem;
+border-bottom: 2px solid #e97fc2;
+display: inline-block;
+padding-bottom: 5px;
+}
+
+.card h2 i {
+color: #ff00ff;
+margin-right: 8px;
+}
+
+/* About & Objective */
+.objective-box {
+background-color: #fff1d9;
+border-left: 4px solid #ff1493;
+padding: 12px 18px;
+margin-bottom: 15px;
+border-radius: 0 8px 8px 0;
+}
+
+.about-text {
+color: #555;
+}
+
+/* Timeline / Education */
+.timeline {
+display: flex;
+flex-direction: column;
+gap: 15px;
+border-left: 3px solid #ff1493;
+padding-left: 20px;
+margin-top: 15px;
+}
+
+.timeline-item {
+position: relative;
+}
+
+
+/*dots on rthe side*/
+.timeline-item::before {
+content: '';
+position: absolute;
+left: -26px;
+top: 25px;
+width: 10px;
+height: 10px;
+border-radius: 50%;
+background-color: #ff1493;
+}
+
+.timeline-item h3 {
+font-size: 1.1rem;
+color: #111;
+}
+
+.timeline-item .institution {
+font-weight: 600;
+color: #555;
+}
+
+.timeline-item .score {
+color: #555;
+font-weight: 600;
+}
+
+/* Skills Filter & Table */
+.filter-buttons {
+margin: 15px 0;
+display: flex;
+gap: 10px;
+flex-wrap: wrap;
+}
+
+.btn {
+border: 1px solid #ff1493;
+background: transparent;
+color: #ff1493;
+padding: 6px 14px;
+border-radius: 20px;
+cursor: pointer;
+font-weight: 600;
+transition: all 0.3s ease;
+}
+
+.btn.active, .btn:hover {
+background: #ff1493;
+color: #fff;
+}
+
+.table-responsive {
+overflow-x: auto;
+}
+
+table {
+width: 100%;
+border-collapse: collapse;
+margin-top: 10px;
+}
+
+th, td {
+padding: 12px 15px;
+text-align: left;
+}
+
+th {
+background-color: #ff1493;
+color: #ffffff;
+}
+
+tr:nth-child(even) {
+background-color: #f9f9f9;
+}
+
+tr:hover {
+background-color: #f1f8ff;
+}
+
+.badge {
+padding: 4px 10px;
+border-radius: 12px;
+font-size: 0.8rem;
+color: white;
+font-weight: bold;
+}
+
+.badge.tech { background-color: #ff1493; }
+.badge.soft { background-color: #ff1493; }
+.badge.extra { background-color: #ff1493; }
+
+/* Progress Bar */
+.progress-bar {
+background-color: #e0e0e0;
+border-radius: 10px;
+height: 10px;
+width: 100%;
+overflow: hidden;
+}
+
+.progress {
+background-color: #ff1493;
+height: 100%;
+border-radius: 10px;
+transition: width 0.5s ease-in-out;
+}
+
+/* Achievements List */
+.achievements-list {
+list-style: none;
+display: flex;
+flex-direction: column;
+gap: 15px;
+}
+
+.achievements-list li {
+display: flex;
+align-items: flex-start;
+gap: 15px;
+}
+
+.achievements-list i {
+font-size: 1.2rem;
+color: #ff1493;
+margin-top: 3px;
+}
+
+.achievements-list i.gold {
+color: #f1c40f;
+}
+
+/* Footer */
+footer {
+background-color: #0f2027;
+color: #a0a0a0;
+text-align: center;
+padding: 20px;
+margin-top: 40px;
+}
+
+.footer-container p {
+font-size: 0.9rem;
+}
+
+.social-links {
+margin-top: 10px;
+display: flex;
+justify-content: center;
+gap: 15px;
+}
+
+.social-links a {
+color: #ffffff;
+font-size: 1.2rem;
+transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+color: #ff1493;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+.header-container h1 {
+font-size: 2rem;
+}
+
+nav ul {
+gap: 8px;
+}
+
+nav a {
+padding: 6px 10px;
+font-size: 0.85rem;
+}
+
+.card {
+padding: 10px;
+}
+}
