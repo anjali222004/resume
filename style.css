@@ -303,3 +303,12 @@ font-size: 0.85rem;
 padding: 10px;
 }
 }
+.profile-photo{
+    width: 130px;
+    height:130px;
+    border-radius:50%;
+    object-fit:cover;
+    display:block;
+    margin:0 auto 15px;
+    border:3px solid white;
+    )
